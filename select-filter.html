@@ -265,7 +265,24 @@
                             <span class="bar"></span>
                             <span class="bar"></span>
                         </div>
+
                         <div class="bg_ban">
+                            <div id="but" style="display: none;">
+                                <i id="icon_hide" class="fas fa-times" style="cursor: pointer;" onclick="close()"></i>
+                                <p>Add Text</p>
+                                <hr>
+                                <p class="mt-4">Enter Text <span>*</span></p>
+                                <input type="text" name="" id="" placeholder="Some Text Here...">
+                                <p class="mt-4">Enter Font Size <span>*</span></p>
+                                <input type="text" name="" id="" placeholder="20">
+                                <input class="mt-4 new_input" type="color" value="#e0ffee" id="colorPicker">
+                                <div class="btr1 mt-4">
+                                    <a href="#"> <button>Select Font Family</button></a>
+                                </div>
+                                <div class="btr1 mt-4">
+                                    <a href="#"> <button>Add Text</button></a>
+                                </div>
+                            </div>
                             <div class="img_sl">
                                 <div class="cr_img sept1">
                                     <h5>Video Editor</h5>
@@ -275,29 +292,29 @@
                                 </div>
                             </div>
                             <div class="bg_bl">
-                                <div class="section_icons">
-                                    <div class="mute_icons">
-                                        <img src="./Assets/text 1.png" alt="">
+                                <div class="section_iconsss">
+                                    <div class="mute_icons15 content" onclick="mymodel()">
+                                        <img src="./Assets/text.png" alt="">
                                         <p>Add Text</p>
                                     </div>
-                                    <div class="mute_icons">
-                                        <img src="./Assets/gallery 1.png" alt="">
+                                    <div class="mute_icons15">
+                                        <img src="./Assets/gallery.png" alt="">
                                         <p>Add Images</p>
                                     </div>
-                                    <div class="mute_icons">
-                                        <img src="./Assets/gif-file-format-symbol 1.png" alt="">
+                                    <div class="mute_icons15">
+                                        <img src="./Assets/gif-file-format-symbol.png" alt="">
                                         <p>Add GIF</p>
                                     </div>
-                                    <div class="mute_icons">
-                                        <img src="./Assets/brand 1.png" alt="">
+                                    <div class="mute_icons15">
+                                        <img src="./Assets/brand.png" alt="">
                                         <p>Add Brand</p>
                                     </div>
-                                    <div class="mute_icons">
-                                        <img src="./Assets/mic (3) 1.png" alt="">
+                                    <div class="mute_icons15">
+                                        <img src="./Assets/mic.png" alt="">
                                         <p>Add Audio</p>
                                     </div>
-                                    <div class="mute_icons">
-                                        <img src="./Assets/chat (1) 1.png" alt="">
+                                    <div class="mute_icons15">
+                                        <img src="./Assets/chat.png" alt="">
                                         <p>Bottom Text Overlay</p>
                                     </div>
 
@@ -307,6 +324,7 @@
                                     <button>Apply</button>
                                 </div>
                             </div>
+
 
                             <div class="fps">
                                 <div class="img-editable">
@@ -398,12 +416,26 @@
         })
     </script>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        // function filter() {
-        //     var a = document.getElementById('all');
-        //     var b = document.getElementById('filter');
-        //     if(a.style)
-        // }
+
+        function mymodel() {
+            var x = document.getElementById('but');
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            }
+            else {
+                x.style.display = 'none';
+            }
+        }
+
+
+        $('#icon_hide').click(function () {
+            $('#but').hide();
+        });
     </script>
 
 </body>
