@@ -72,7 +72,7 @@ body, html {
     font-size: 24px;
 }
 
-.section_icons {
+.section_iconsss {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[6];
@@ -84,16 +84,17 @@ body, html {
 
 
 
-.mute_icons img {
+.mute_icons15 img {
     background: #93C493;
     -webkit-box-shadow: 0px 14px 20px rgba(146, 146, 146, 0.24);
     box-shadow: 0px 14px 20px rgba(146, 146, 146, 0.24);
     border-radius: 10px;
     padding: 10px;
-    width: 38%
+    width: 38%;
+    pointer-events: all;
 }
 
-.mute_icons:hover img {
+.mute_icons15 img:hover {
     background-color: rgba(255, 184, 0, 1);
     -webkit-transition: .3s ease-in-out;
     -o-transition: .3s ease-in-out;
@@ -102,7 +103,7 @@ body, html {
 }
 
 
-.mute_icons p {
+.mute_icons15 p {
     color: rgba(77, 77, 77, 1);
     margin-bottom: 0px;
     font-family: 'NexaDemo__Bold';
@@ -114,7 +115,7 @@ body, html {
     font-size: calc(8pt + 0.15vw);
 }
 
-.mute_icons {
+.mute_icons15 {
     margin-top: 19px;
 }
 
@@ -177,7 +178,7 @@ body, html {
 }
 
 @media screen and (max-width: 992px) {
-    .section_icons {
+    .section_iconsss {
         -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     }
@@ -194,9 +195,13 @@ body, html {
 
 
 @media screen and (max-width: 538px) {
-    .section_icons {
+    .section_iconsss {
         -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .mute_icons15 img {
+        width: 50%;
     }
 
 }
@@ -391,5 +396,74 @@ body, html {
     .savess button {
         width: 50%;
         margin-top: 10px;
+    }
+}
+
+
+
+#but {
+    background-color: rgba(255, 255, 255, 1);
+    height: 100vh;
+    width: 400px;
+    z-index: 999;
+    position: absolute;
+    right: 0px;
+    border-radius: 0px 20px;
+}
+
+#but i {
+    float: right;
+    padding: 8px 20px;
+}
+
+#but p {
+    text-align: left;
+    padding: 4px 20px;
+    color: rgba(77, 77, 77, 1);
+    margin-bottom: 0px;
+    font-family: 'NexaDemo__Bold';
+    font-size: calc(10pt + 0.15vw);
+}
+
+#but span {
+    color: red;
+    font-weight: bolder;
+}
+
+#but input {
+    width: 88%;
+    outline: none;
+    padding: 8px 10px;
+    border: none;
+    background-color: rgba(137, 229, 155, 0.15);
+    border-radius: 6px;
+    color: rgba(77, 77, 77, 1);
+    margin-bottom: 0px;
+    font-family: 'NexaDemo__Bold';
+    font-size: calc(9pt + 0.15vw);
+}
+
+#but img {
+    display: none;
+}
+
+
+#but button {
+    border: none;
+    padding: 10px;
+    width: 80%;
+    background: #068A23;
+    box-shadow: 0px 8px 12px rgba(114, 111, 106, 0.24);
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: 'NexaDemo__Bold';
+    font-size: calc(9pt + 0.15vw);
+}
+
+
+@media screen and (max-width: 538px) {
+
+    #but {
+        width: 300px;
     }
 }
